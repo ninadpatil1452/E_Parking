@@ -69,17 +69,18 @@
                 android:layout_marginLeft="48dp"/>
 
             <EditText
-                android:hint="someone@gmail.com"
-                android:paddingLeft="26dp"
-                android:paddingRight="26dp"
-                android:inputType="textEmailAddress"
-                android:fontFamily="@font/seg_ui_semibold"
-                android:textColor="@color/black"
-                android:background="@drawable/edit_text_background"
+                android:id="@+id/email_text"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_marginLeft="48dp"
-                android:layout_marginRight="48dp" />
+                android:layout_marginRight="48dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:hint="someone@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,19 +91,21 @@
                 android:textColor="@color/base"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="48dp"/>
+
             <EditText
-                android:layout_marginTop="8dp"
-                android:hint="Password"
-                android:paddingLeft="26dp"
-                android:paddingRight="26dp"
-                android:textColor="@color/black"
-                android:inputType="textPassword"
-                android:fontFamily="@font/seg_ui_semibold"
-                android:background="@drawable/edit_text_background"
+                android:id="@+id/password_text"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_marginLeft="48dp"
-                android:layout_marginRight="48dp" />
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/black" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,15 +132,17 @@
                     android:textColor="@color/base"
                     android:layout_marginLeft="12dp"
                     android:layout_weight="1"/>
+
                 <Button
+                    android:id="@+id/sign_in_button"
                     android:layout_width="0dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
+                    android:background="@drawable/background_back"
+                    android:fontFamily="@font/seg_ui_semibold"
                     android:text="Sign In"
                     android:textColor="@color/logoColor"
-                    android:textSize="16dp"
-                    android:fontFamily="@font/seg_ui_semibold"
-                    android:background="@drawable/background_back"/>
+                    android:textSize="16dp" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -157,15 +162,17 @@
                 android:text="Don't have an account?"
                 android:fontFamily="@font/seg_ui_semibold"
                 android:layout_marginLeft="12dp"/>
+
             <TextView
+                android:id="@+id/tv_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/blue"
-                android:textSize="18dp"
-                android:text="Register Instead"
-                android:fontFamily="@font/seg_ui_semibold"
+                android:layout_marginLeft="12dp"
                 android:layout_weight="1"
-                android:layout_marginLeft="12dp"/>
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="Register Instead"
+                android:textColor="@color/blue"
+                android:textSize="18dp" />
 
         </LinearLayout>
     </RelativeLayout>

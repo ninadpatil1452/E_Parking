@@ -172,15 +172,16 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/tv_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="48dp"
-                    android:layout_marginRight="48dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
                     android:fontFamily="@font/seg_ui_semibold"
                     android:text="Already have a Account? Login"
                     android:textColor="@color/blue"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
