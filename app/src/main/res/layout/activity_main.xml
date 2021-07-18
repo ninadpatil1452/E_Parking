@@ -126,6 +126,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:onClick="callForgotPassword"
                     android:textSize="18dp"
                     android:text="Forgot Password?"
                     android:fontFamily="@font/seg_ui_semibold"
