@@ -69,6 +69,7 @@
                 android:textSize="18dp" />
 
             <EditText
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_marginLeft="48dp"
@@ -92,6 +93,7 @@
                 android:textSize="18dp" />
 
             <EditText
+                android:id="@+id/et_number"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_marginLeft="48dp"
@@ -111,11 +113,12 @@
                 android:layout_marginLeft="48dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/seg_ui_semibold"
-                android:text="Password"
+                android:text="Name"
                 android:textColor="@color/base"
                 android:textSize="18dp" />
 
             <EditText
+                android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_marginLeft="48dp"
@@ -123,8 +126,8 @@
                 android:layout_marginRight="48dp"
                 android:background="@drawable/edit_text_background"
                 android:fontFamily="@font/seg_ui_semibold"
-                android:hint="Password"
-                android:inputType="textPassword"
+                android:hint="Name"
+                android:inputType="text"
                 android:paddingLeft="26dp"
                 android:paddingRight="26dp"
                 android:textColor="@color/black" />
@@ -134,11 +137,12 @@
                 android:layout_marginLeft="48dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/seg_ui_semibold"
-                android:text="Confirm Password"
+                android:text="Password"
                 android:textColor="@color/base"
                 android:textSize="18dp" />
 
             <EditText
+                android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_marginLeft="48dp"
@@ -146,7 +150,7 @@
                 android:layout_marginRight="48dp"
                 android:background="@drawable/edit_text_background"
                 android:fontFamily="@font/seg_ui_semibold"
-                android:hint="Re-enter Password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingLeft="26dp"
                 android:paddingRight="26dp"
@@ -161,7 +165,9 @@
                 android:orientation="vertical"
 
                 >
+
                 <Button
+                    android:id="@+id/b_register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

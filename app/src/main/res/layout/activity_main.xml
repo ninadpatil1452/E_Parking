@@ -123,16 +123,18 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp">
+
                 <TextView
+                    android:id="@+id/tv_Forgot"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:onClick="callForgotPassword"
-                    android:textSize="18dp"
-                    android:text="Forgot Password?"
-                    android:fontFamily="@font/seg_ui_semibold"
-                    android:textColor="@color/base"
                     android:layout_marginLeft="12dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:onClick="callForgotPassword"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/base"
+                    android:textSize="18dp" />
 
                 <Button
                     android:id="@+id/sign_in_button"
