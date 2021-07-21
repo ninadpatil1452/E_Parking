@@ -1,14 +1,32 @@
 package com.example.e_parking
-
+import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import android.util.Log
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 
 class ForgotPassword : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
     private lateinit var text: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
+        auth = Firebase.auth
+        val emailAddress = "user@example.com"
+
+
+
+        FirebaseAuth.auth.sendPasswordResetEmail(emailAddress)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Log.d(TAG, "Email sent.")
+                }
+            }
 //        viewInitializations()
 //        val tvLogin = findViewById<TextView>(R.id.tv_login)
 //
