@@ -1,12 +1,11 @@
 package com.example.e_parking
 import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class ForgotPassword : AppCompatActivity() {
@@ -21,7 +20,7 @@ class ForgotPassword : AppCompatActivity() {
 
 
 
-        FirebaseAuth.auth.sendPasswordResetEmail(emailAddress)
+        auth.sendPasswordResetEmail(emailAddress)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Log.d(TAG, "Email sent.")
